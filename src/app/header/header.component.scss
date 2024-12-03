@@ -1,0 +1,36 @@
+header {
+
+  .navbar-element {
+    display: none;
+
+    &.active {
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      right: 0;
+      background-color: rgba(0, 0, 0, .85);
+
+      nav {
+        width: 100%;
+        height: 100%;
+        max-width: 275px;
+        margin: 0 0 0 auto;
+        padding: 100px 0 80px;
+
+        button {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+
+        a {
+          width: 90%;
+          display: block;
+        }
+      }
+    }
+  }
+
+}

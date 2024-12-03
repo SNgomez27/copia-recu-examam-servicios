@@ -1,0 +1,23 @@
+<div class="">
+  <p class="text-decoration-underline text-center fs-1">Login</p>
+</div>
+
+<div class="text-center pt-3">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label class="mb-4">
+      <i class="bi bi-person-fill text-primary"></i>
+      <input class="form-control" type="text" placeholder="Nombre" formControlName="nombre" required>
+    </label>
+
+    <label class="mb-4">
+      <i class="bi bi-lock-fill text-primary"></i>
+      <input class="form-control" type="password" placeholder="Contraseña" formControlName="contraseña" required>
+    </label>
+    <br>
+    <button type="submit" class="col-3 btn btn-primary text-light position-relative mt-5" [disabled]="!loginForm.valid">
+      Login
+    </button>
+  </form>
+</div>
+
+

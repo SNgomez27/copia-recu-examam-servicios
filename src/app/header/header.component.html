@@ -1,0 +1,20 @@
+
+<header class="w-100 position-sticky top-0 row align-items-center justify-content-around py-3 px-2 bg-primary m-0">
+  <div class="logo col-5">
+    <span class="bg-white py-2 px-4 rounded-3 small">LOGO AQUÍ</span>
+  </div>
+  <div class="navbar-element p-0" [class.active]="showNav"> <!-- Debe de afectar a este elemento -->
+    <nav class="bg-white">
+      <button type="button" class="btn btn-primary" (click)="toggleNav()">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <a class="m-auto text-decoration-none text-dark text-muted mb-2">Inicio</a>
+      <a class="m-auto text-decoration-none text-dark text-muted">Alumnos</a>
+    </nav>
+  </div>
+  <div class="close-nav col-5 text-end">
+    <button type="button" class="btn btn-light" (click)="toggleNav()">
+      <i class="bi bi-list"></i>
+    </button>
+  </div>
+</header>

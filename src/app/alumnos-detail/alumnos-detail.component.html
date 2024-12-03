@@ -1,0 +1,15 @@
+
+
+<div class="w-75 row align-items-center justify-content-center m-auto mt-4">
+  <div class="rounded-3 shadow-sm col-11 py-4 px-3">
+    <p>Nombre: {{ alumno?.nombre }}</p>
+    <p>Curso: {{alumno?.curso}}</p>
+    <p>Estado de evaluacion: {{alumno?.aprobado}}</p>
+  </div>
+
+  <button type="button" class="btn btn-outline-primary" routerLink="/alumnos">
+    <i class="bi bi-chevron-compact-left"></i>
+  </button><br>
+  <br>
+  <button type="button" class="btn btn-outline-primary mt-2" routerLink="/login">Cerrar sesion</button>
+</div>

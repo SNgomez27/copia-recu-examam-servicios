@@ -1,0 +1,12 @@
+<div id="cont-lista" class="row gap-2 justify-content-center">
+  <div class="col-4 shadow-sm py-4 px-3 rounded-3" *ngFor="let  lista of listas">
+      <p >
+        Nombre:{{lista.nombre}}
+      </p>
+      <p>
+        Curso:{{lista.curso}}
+      </p>
+      <button type="button" class="btn btn-outline-dark" (click)="enviarDatos(lista)">Ver mas </button>
+    </div>
+  </div>
+
